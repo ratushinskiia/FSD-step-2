@@ -1,0 +1,21 @@
+{
+  "name": "fsd-step-2",
+  "version": "1.0.0",
+  "description": "The learning task from Fullstack Development",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode-production",
+    "dev": "webpack --mode-development"
+  },
+  "keywords": [
+    "webpack",
+    "pug",
+    "scss"
+  ],
+  "author": "RightNow",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  }
+}
