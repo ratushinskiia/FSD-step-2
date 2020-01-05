@@ -6,5 +6,20 @@ module.exports = {
         filename: 'bundle.[name].js',
         path: path.resolve(__dirname +'/dist'), 
     },
-    plugins: [new HtmlWebpackPlugin()]
+    devServer: {
+        contentBase: './dist',
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './src/index.pug'
+         }),
+        ],
+    module: {
+        rules: [
+              { 
+                test: /\.pug$/,
+                use: ['pug-loader']
+              },
+        ]
+    }
 }
